@@ -19,3 +19,26 @@ console.log(typeof 9007199254740991n); // bigint
 
 // Symbol: Para crear identificadores únicos
 console.log(typeof Symbol('id'));      // symbol
+
+// Arreglos (Arrays): Aunque los usamos como listas, técnicamente son objetos
+console.log(typeof [1, 2, 3]);         // object
+
+// Objetos literales: Para representar entidades con propiedades
+console.log(typeof { curso: 'JS', nivel: 'Básico' }); // object
+
+// Fechas: Un tipo de objeto especial para manejar tiempo
+console.log(typeof new Date());        // object
+
+// Funciones: Bloques de código reutilizables
+console.log(typeof function() {});     // function
+console.log(typeof console.log);       // function
+
+// NaN (Not a Number): Resultado de operaciones matemáticas imposibles
+// ¡Irónicamente, su tipo es number!
+console.log(typeof NaN);               // number
+
+// Una cadena que parece número sigue siendo cadena
+console.log(typeof "123");             // string
+
+// Una comparación booleana
+console.log(typeof (10 > 5));          // boolean
