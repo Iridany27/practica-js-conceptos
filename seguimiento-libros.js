@@ -1,4 +1,4 @@
-// Problema: Seguimiento de Libros
+ñ// Problema: Seguimiento de Libros
 
 // 1. Declarar un arreglo vacío para almacenar los libros
 let librosLeidos = [];
