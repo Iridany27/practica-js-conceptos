@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #f0e6ff 0%, #ffe0f0 50%, #dff0ff 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #7c5cbf;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #d9bfee;
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  backdrop-filter: blur(8px);
+}
+
+textarea {
+  width: 100%;
+  border: 1.5px solid #c8a8e8;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  color: #5a4080;
+  background: rgba(255, 255, 255, 0.9);
+  resize: vertical;
+  min-height: 100px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  border-color: #a87dcf;
+  box-shadow: 0 0 0 3px rgba(168, 125, 207, 0.15);
+}
+
+textarea::placeholder {
+  color: #bca8d8;
+}
+
+button {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #b48ee0, #e89ac7);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.6rem 1.6rem;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Estilo base de cada comentario */
+.comment {
+  background: rgba(255, 255, 255, 0.8);
+  border-left: 4px solid #b48ee0;
+  border-top: 0.5px solid #e8d4f8;
+  border-right: 0.5px solid #e8d4f8;
+  border-bottom: 0.5px solid #e8d4f8;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #5a4080;
+  line-height: 1.6;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
